@@ -1,7 +1,8 @@
+use std::net::SocketAddr;
+
 use anyhow::Result;
 use axum::response::{IntoResponse, Response};
 use reqwest::StatusCode;
-use std::net::SocketAddr;
 use tracing::info;
 
 mod auth;

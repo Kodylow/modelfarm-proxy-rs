@@ -1,11 +1,10 @@
 // src/router.rs
 
+use anyhow::Result;
 use axum::{middleware, Router};
 use reverse_proxy_service::TrimPrefix;
-use tracing::info;
-
-use anyhow::Result;
 use tower_http::cors::{Any, CorsLayer};
+use tracing::info;
 
 use crate::auth::add_auth;
 
