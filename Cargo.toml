@@ -15,11 +15,3 @@ tower-http = { version = "0.4.4", features = ["cors"] }
 tracing-subscriber = "0.3.18"
 reqwest = { version = "0.11.22", features = ["json"] }
 serde_json = "1.0.108"
-
-[profile]
-
-[profile.ci]
-inherits = "dev"
-incremental = false
-debug = "line-tables-only"
-lto = "off"
